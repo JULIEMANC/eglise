@@ -1,0 +1,240 @@
+.back-picture {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  margin-top: 20px;
+
+  .picture {
+    width: 50%;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+  }
+
+  .back-content {
+    background-color: #EEEEEE;
+    width: 34%;
+    height: 550px;
+    position: relative;
+    z-index: 1;
+    margin-left: -80px;
+    padding: 100px;
+
+    h1 {
+      font-size: 40px;
+      color: #303030;
+    }
+
+    .red-bar {
+      width: 20px;
+      height: 3px;
+      background: #f43f1a;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    p {
+      margin-top: 20px;
+      margin-bottom: 50px;
+      color: #303030;
+    }
+
+    .more {
+      width: 150px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: #FF4713;
+      border: #EEEEEE;
+      color: #EEEEEE;
+      font-size: 15px;
+    }
+  }
+}
+
+
+
+.cards-container {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  z-index: 2;
+  gap: 30px;
+  position: absolute;
+  overflow-x: hidden;
+
+  .card {
+    background: #fff;
+    box-shadow: 3px 8px 12px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 350px;
+    text-align: center;
+    background-color: #EEEEEE;
+
+    h2 {
+      margin: 50px;
+      color: #303030;
+    }
+
+    .red-bar {
+      width: 20px;
+      height: 3px;
+      background: #f43f1a;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .button {
+      margin-top: 50px;
+      width: 150px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: #FF4713;
+      border: #EEEEEE;
+      color: #EEEEEE;
+      font-size: 15px;
+    }
+
+    ul,
+    li {
+      list-style: none;
+      margin: 10px;
+    }
+  }
+}
+
+// .map-info-container {
+//   display: flex;
+//   margin-top: 500px;
+//   justify-content: center;
+
+//   .carte {
+//     object-fit: cover;
+//     width: 900px;
+//   }
+
+//   .info-box {
+//     background: #fff;
+//     padding: 1.5rem;
+//     width: 400px;
+//     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+//     font-family: sans-serif;
+//     font-size: 14px;
+//     color: #333;
+
+//     h2 {
+//       font-size: 16px;
+//       font-weight: bold;
+//       margin-top: 1rem;
+//       // position: relative;
+//       padding-bottom: 0.5rem;
+//     }
+
+//     .red-bar {
+//       // display: block;
+//       width: 20px;
+//       height: 4px;
+//       background: #f43f1a;
+//       margin: 4px 0 10px;
+//     }
+
+//     .info-section {
+//       margin-bottom: 1.5rem;
+
+//       p {
+//         margin: 0.3rem 0;
+//       }
+//     }
+
+//     .map-button {
+//       background-color: #f43f1a;
+//       color: white;
+//       font-weight: bold;
+//       border: none;
+//       padding: 0.8rem 1rem;
+//       cursor: pointer;
+//       width: 100%;
+//       font-size: 14px;
+
+//       &:hover {
+//         background-color: #d83714;
+//       }
+//     }
+//   }
+// }
+
+
+.map-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 500px;
+
+  .carte {
+    width: 800px;
+    img {
+      width: 100%;
+          height: 300px;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .info-box {
+    background: #fff;
+    padding: 2rem;
+    width: 320px;
+    height: auto;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .red-bar {
+      width: 20px;
+      height: 3px;
+      background: #f43f1a;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .info-section {
+      margin-bottom: 2rem;
+
+      p {
+        margin: 0.4rem 0;
+        line-height: 1.4;
+      }
+    }
+
+    .map-button {
+      background-color: #f43f1a;
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 0.8rem;
+      font-size: 14px;
+      width: 100%;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.2s ease-in-out;
+
+      &:hover {
+        background-color: #d83714;
+      }
+    }
+  }
+}

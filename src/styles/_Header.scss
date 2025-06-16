@@ -1,0 +1,128 @@
+.header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 10;
+  color: #303030;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+
+  .logo-title {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .menu-link {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    a {
+      position: relative;
+      color: #303030;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+      padding: 5px 0;
+      transition: color 0.3s ease;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(90deg, #FF4713);
+        transition: width 0.3s ease;
+      }
+
+
+      &::after {
+        width: 100%;
+      }
+
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+
+  .burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 9999;
+
+    .bar {
+      height: 3px;
+      background: black;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .open:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .open:nth-child(2) {
+      opacity: 0;
+    }
+
+    .open:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .burger {
+      display: flex;
+    }
+
+    .menu-link {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(90deg, rgba(33, 244, 239, 0.95), rgba(18, 171, 129, 0.95));
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      padding: 40px;
+      border-radius: 0;
+      z-index: 9998;
+      display: none;
+
+      &.open {
+        display: flex;
+      }
+
+      a {
+        font-size: 20px;
+        font-weight: bold;
+        color: #303030;
+      }
+    }
+
+    .menu-link:not(.open) {
+      display: none;
+    }
+  }
+}
