@@ -11,15 +11,8 @@ export default function Header() {
   return (
     <header className={`header ${menuOpen ? "menu-open" : ""}`}>
       <div className="logo-title">
-        {/* <Image
-          src="/logo.png"
-          alt="Logo Panoply PVC"
-          width={100}
-          height={100}
-          className="logo"
-          priority
-        /> */}
-        <span>Eglise Saint Pierre </span>
+        <img className="logo-header" src="/logo - Copie.png" />
+        {/* <span>Eglise Saint Pierre </span> */}
       </div>
 
       <button className="burger" onClick={toggleMenu}>
@@ -30,10 +23,10 @@ export default function Header() {
 
       <nav className={`menu-link ${menuOpen ? "open" : ""}`}>
         <a href="#home" onClick={closeMenu}>Home</a>
-        <a href="#title-pdt" onClick={closeMenu}>Cartes</a>
-        <a href="#cards-realisations" onClick={closeMenu}>Agenda</a>
-        <a href="#nous-concernant" onClick={closeMenu}>Nos Clergés</a>
-        <a href="#contact" onClick={closeMenu}>Contact</a>
+        <a href="#gallery-section" onClick={closeMenu}>Cartes</a>
+        <a href="#messes-table-container" onClick={closeMenu}>Agenda</a>
+        <a href="#clerge-section" onClick={closeMenu}>Le Clergé</a>
+        <a href="#contact-section" onClick={closeMenu}>Contact</a>
       </nav>
     </header>
   );
