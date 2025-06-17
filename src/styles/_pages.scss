@@ -97,9 +97,11 @@
       h1 {
         font-size: 22px;
       }
-P{
-  font-size: 14px;
-}
+
+      P {
+        font-size: 14px;
+      }
+
       .more {
         width: 100%;
         font-size: 16px;
@@ -394,6 +396,10 @@ P{
       font-size: 15px;
     }
   }
+
+  @media (max-width: 320px) {
+    display: none;
+  }
 }
 
 //////////////////////// CLERGE
@@ -452,7 +458,8 @@ P{
 
     .titre {
       font-size: 0.9rem;
-      color: #c3bab2;
+      // color: #c3bab2;
+      color: #FF4713;
       margin-top: 0.25rem;
     }
 
@@ -491,8 +498,160 @@ P{
 
 
 //////////////////// FORM
+
+// #contact-section {
+//   padding: 50px;
+
+//   .underline {
+//     .contact-title {
+//       text-align: center;
+//       font-size: 2.2rem;
+//       color: #303030;
+
+//       @media (max-width: 768px) {
+//         margin-bottom: 50px;
+//       }
+//     }
+
+//     .red-bar {
+//       width: 30px;
+//       height: 3px;
+//       background: #f43f1a;
+//       margin: 0 50px 50px 756px;
+//       display: block;
+
+//       @media (max-width: 768px) {
+//         display: none;
+//       }
+//     }
+//   }
+// }
+
+
+// .contact-layout {
+//   display: flex;
+//   flex-wrap: nowrap;
+//   justify-content: center;
+//   gap: 2rem;
+//   max-width: 1140px;
+//   margin: 0 auto;
+// }
+
+// // Style général des cards
+// .contact-card {
+//   background-color: #fff;
+//   border-radius: 16px;
+//   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+//   padding: 2rem;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 1.5rem;
+
+//   h3 {
+//     font-size: 1.2rem;
+//     margin-bottom: 1rem;
+//     color: #303030;
+//   }
+
+//   p {
+//     color: #555;
+//     margin-bottom: 0.8rem;
+//     font-size: 0.95rem;
+//   }
+// }
+
+// // Petite card infos
+// .contact-infos-card {
+//   flex: 1 1 300px;
+//   max-width: 300px;
+
+//   @media (max-width: 768px) {
+//     width: 450px;
+//   }
+// }
+
+// .contact-form-card {
+//   flex: 1 1 600px;
+//   max-width: 650px;
+
+//   @media (max-width: 768px) {
+//     width: 450px;
+//   }
+//   @media (max-width: 320px) {
+//     width: 300px;
+//   }
+//   form {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 1rem;
+
+//     @media (max-width: 768px) {
+//       gap: 2rem;
+//     }
+
+//     input,
+//     textarea {
+//       padding: 0.75rem 1rem;
+//       border: 1px solid #ccc;
+//       border-radius: 8px;
+//       font-size: 0.95rem;
+//       font-family: inherit;
+//     }
+
+//     .button {
+//       background-color: #f43f1a;
+//       transition: background-color 0.2s ease-in-out;
+//       align-self: flex-start;
+//       padding: 0.6rem 1.2rem;
+//       border: white;
+//       color: white;
+//       font-weight: 600;
+//       border-radius: 4px;
+//       cursor: pointer;
+
+//       &:hover {
+//         background: transparent;
+//         color: #FF4713;
+//         border: 2px solid #FF4713;
+//         box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+//       }
+//     }
+//   }
+// }
+
+// .contact-logo-card {
+//   flex: 1 1 300px;
+//   max-width: 300px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   @media (max-width: 768px) {
+//   width: 450px;
+//   }
+
+//   img.logo-grand {
+//     width: 300px;
+//     object-fit: cover;
+
+//   }
+// }
+
+// // Responsive
+// @media (max-width: 768px) {
+//   .contact-layout {
+//     flex-direction: column;
+//     align-items: center;
+//   }
+
+//   .contact-infos-card,
+//   .contact-form-card {
+//     max-width: 100%;
+//   }
+// }
+
 #contact-section {
-  padding: 50px;
+  padding: 50px 20px; // padding horizontal réduit pour petits écrans
 
   .underline {
     .contact-title {
@@ -501,7 +660,7 @@ P{
       color: #303030;
 
       @media (max-width: 768px) {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
       }
     }
 
@@ -509,7 +668,7 @@ P{
       width: 30px;
       height: 3px;
       background: #f43f1a;
-      margin: 0 50px 50px 756px;
+      margin: 0 auto 40px auto; // centrée automatiquement
       display: block;
 
       @media (max-width: 768px) {
@@ -519,7 +678,6 @@ P{
   }
 }
 
-
 .contact-layout {
   display: flex;
   flex-wrap: nowrap;
@@ -527,9 +685,14 @@ P{
   gap: 2rem;
   max-width: 1140px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
 }
 
-// Style général des cards
 .contact-card {
   background-color: #fff;
   border-radius: 16px;
@@ -538,6 +701,8 @@ P{
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
 
   h3 {
     font-size: 1.2rem;
@@ -552,13 +717,12 @@ P{
   }
 }
 
-// Petite card infos
 .contact-infos-card {
   flex: 1 1 300px;
   max-width: 300px;
 
   @media (max-width: 768px) {
-    width: 450px;
+    max-width: 100%;
   }
 }
 
@@ -567,7 +731,7 @@ P{
   max-width: 650px;
 
   @media (max-width: 768px) {
-    width: 450px;
+    max-width: 100%;
   }
 
   form {
@@ -575,17 +739,14 @@ P{
     flex-direction: column;
     gap: 1rem;
 
-    @media (max-width: 768px) {
-      gap: 2rem;
-    }
-
     input,
     textarea {
       padding: 0.75rem 1rem;
       border: 1px solid #ccc;
       border-radius: 8px;
       font-size: 0.95rem;
-      font-family: inherit;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .button {
@@ -617,25 +778,108 @@ P{
   align-items: center;
 
   @media (max-width: 768px) {
-  width: 450px;
+    max-width: 100%;
   }
 
   img.logo-grand {
-    width: 300px;
-    object-fit: cover;
+    width: 200px;
 
+    @media (max-width: 480px) {
+      width: 150px;
+    }
+
+    @media (max-width: 320px) {
+      width: 120px;
+    }
   }
 }
 
-// Responsive
-@media (max-width: 768px) {
-  .contact-layout {
-    flex-direction: column;
-    align-items: center;
+
+@media (max-width: 480px) {
+  .contact-card {
+    padding: 1.5rem;
   }
 
-  .contact-infos-card,
-  .contact-form-card {
-    max-width: 100%;
+  .contact-layout {
+    gap: 1rem;
+  }
+
+  form .button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/// /////////////////////// FOOTER
+.site-footer {
+  background-color: #f3f3f3;
+  padding: 40px 20px 20px;
+  font-size: 0.95rem;
+  color: #303030;
+
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 2rem;
+    max-width:1300px;
+    margin: 0 auto;
+
+    div {
+      flex: 1 1 200px;
+    }
+
+    .footer-logo {
+      display: flex;
+         flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+      img {
+        width: 100px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+    }
+
+    .footer-links,
+    .footer-mentions,
+    .footer-menu {
+      h4 {
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #f43f1a;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 6px;
+
+          a {
+            text-decoration: none;
+            color: #303030;
+
+            &:hover {
+              color: #f43f1a;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #666;
   }
 }

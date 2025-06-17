@@ -3,18 +3,18 @@ export default function Home() {
     <div>
       <main>
         <div className="back-picture">
-          <img className="picture" src="/back-eglise.jpg" />
+          <img className="picture" src="/ext-eglise.jpg" />
           <div className="back-content">
-            <h1>NOTRE EGLISE SAINT PIERRE</h1>
+            <h1>NOTRE ÉGLISE SAINT-PIERRE</h1>
             <span className="red-bar"></span>
             <p>L'église Saint-Pierre de Voiron ou église Saint-Pierre de Sermorens, est un édifice religieux situé à Voiron en Isère en région Auvergne-Rhône-Alpes. Positionnée au cœur du quartier ancien de Sermorens, cette église est l’un des plus vieux monuments de la ville de Voiron avec la tour Barral, dernier vestige de l'ancien château médiéval. L'église est rattachée à la paroisse Notre-Dame de Vouise, elle-même rattachée au diocèse de Grenoble-Vienne.</p>
-            <button className="more">En savoir + </button>
+            <a href="https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Pierre_de_Voiron">  <button className="more">En savoir + </button></a>
           </div>
         </div>
-        
+
         <section className="cards-container">
           <div className="card">
-            <h2>Eglise Saint Pierre</h2>
+            <h2>Église Saint Pierre</h2>
             <span className="red-bar"></span>
             <ul>
               <li>52 rue Sermorens, VOIRON (38500)</li>
@@ -146,7 +146,7 @@ export default function Home() {
               </div>
               <h3>Mgr Jean-Marc Eychenne</h3>
               <span className="bar"></span>
-              <p className="titre">diocèse de Grenoble-Vienne</p>
+              <p className="titre">Diocèse de Grenoble-Vienne</p>
               <p className="description">Évêque du diocèse</p>
             </div>
 
@@ -156,7 +156,7 @@ export default function Home() {
               </div>
               <h3>Père Patrick Gaso</h3>
               <span className="bar"></span>
-              <p className="titre">diocèse de Grenoble-Vienne</p>
+              <p className="titre">Diocèse de Grenoble-Vienne</p>
               <p className="description">Curé de la paroisse Notre-Dame de l’espérance</p>
             </div>
 
@@ -166,7 +166,7 @@ export default function Home() {
               </div>
               <h3>Père Patrick Faure</h3>
               <span className="bar"></span>
-              <p className="titre">diocèse de Grenoble-Vienne</p>
+              <p className="titre">Diocèse de Grenoble-Vienne</p>
               <p className="description">
                 Chapelain de la collégiale St André<br />
                 Vicaire de la paroisse Notre-Dame de l’espérance
@@ -178,7 +178,7 @@ export default function Home() {
               </div>
               <h3>Père Patrick Faure</h3>
               <span className="bar"></span>
-              <p className="titre">diocèse de Grenoble-Vienne</p>
+              <p className="titre">Diocèse de Grenoble-Vienne</p>
               <p className="description">
                 Chapelain de la collégiale St André<br />
                 Vicaire de la paroisse Notre-Dame de l’espérance
@@ -217,9 +217,47 @@ export default function Home() {
             </div>
           </div>
         </section>
-
       </main>
       <footer >
+        <footer className="site-footer">
+          <div className="footer-content">
+            <div className="footer-logo">
+              <img src="/logo - Copie.png" alt="Logo Église" />
+              <p>Église Saint-Pierre de Voiron<br />Paroisse Notre-Dame de Vouise</p>
+            </div>
+
+            <div className="footer-menu">
+              <h4>Menu</h4>
+              <ul>
+                <li><a href="#gallery-section">Carte</a></li>
+                <li><a href="#messes-table-container">Agenda</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+              </ul>
+            </div>
+            <div className="footer-links">
+              <h4>Informations</h4>
+              <ul>
+                <li>52 rue Sermorens, Voiron</li>
+                <li>09 65 20 29 48</li>
+                <li>eglise@example.com</li>
+              </ul>
+            </div>
+
+            <div className="footer-mentions">
+              <h4>Ressources</h4>
+              <ul>
+                <li><a href="/mentions-legales">Mentions légales</a></li>
+                <li><a href="/confidentialite">Politique de confidentialité</a></li>
+                <li><a href="/plan-site">Plan du site</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div className="footer-bottom">
+            <p>&copy; {new Date().getFullYear()} Église Saint-Pierre de Voiron — Tous droits réservés.</p>
+          </div>
+        </footer>
 
       </footer>
     </div>
