@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "../styles/_header.scss";
+import "../styles/_Header.scss";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
